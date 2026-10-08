@@ -1,0 +1,7 @@
+profile,n,relevant_component,generic_flagged_composite,generic_flagged_component,generic_AUC_vs_reliable,aware_gold_flagged_composite,aware_gold_flagged_component,aware_gold_AUC_vs_reliable,aware_extracted_flagged_composite,aware_extracted_flagged_component,aware_extracted_AUC_vs_reliable
+quality_drift,4,quality,1.0,1.0,1.0,0.5,0.5,0.786,0.75,0.5,0.821
+slightly_late,6,delivery,1.0,1.0,1.0,1.0,1.0,1.0,0.667,0.667,0.607
+price_creep,4,price,1.0,1.0,1.0,0.75,0.75,1.0,0.0,0.0,0.321
+chronic_late,4,delivery,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.661
+ignores_amendment,3,delivery,0.0,0.0,0.321,1.0,1.0,1.0,0.0,0.0,0.571
+erratic,5,delivery,1.0,0.8,1.0,1.0,1.0,1.0,0.6,0.6,0.457

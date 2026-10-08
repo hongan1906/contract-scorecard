@@ -1,0 +1,6 @@
+seed,extraction_F1_micro,AUC_generic,AUC_aware_gold,AUC_aware_extracted,false_flag_generic,false_flag_aware_gold,false_flag_aware_extracted,ignores_amend_flagged_generic,ignores_amend_flagged_aware_gold
+1,0.891,0.94,1.0,0.616,0.071,0.0,0.429,0.0,1.0
+2,0.88,0.909,0.973,0.692,0.0,0.0,0.214,0.0,1.0
+3,0.895,0.929,0.986,0.843,0.071,0.0,0.071,0.0,1.0
+4,0.882,0.89,0.962,0.72,0.0,0.0,0.214,0.0,1.0
+5,0.886,0.931,0.951,0.574,0.143,0.0,0.286,0.0,1.0

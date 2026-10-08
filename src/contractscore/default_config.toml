@@ -1,0 +1,138 @@
+# All simulation assumptions live here. Change them and re-run `python -m contractscore all`.
+# Nothing in this file is an empirical finding: these are design parameters.
+
+[run]
+seed = 7
+n_suppliers_scale = 1.0        # multiplies every profile `count`
+history_end = "2025-12-31"
+buyer_name = "Nordvik Industrial Oy"
+
+[contract]
+# probabilities of the "hard cases" in the contract text
+p_amendment = 0.25             # an amendment changes lead time or payment terms (in addition to forced ones)
+p_annex_price = 0.40           # unit price appears only in an annex table
+p_words_only = 0.20            # numbers spelled out, no digits ("thirty days")
+p_lead_in_weeks = 0.20         # lead time expressed in weeks, not days
+p_distractor = 0.30            # an unrelated sentence with a delivery period (sample delivery)
+p_missing_penalty = 0.15       # no late-delivery penalty clause
+p_missing_defect = 0.15
+p_missing_price_cap = 0.20
+p_missing_volume = 0.15
+p_missing_liability = 0.15
+
+[orders]
+monthly_rate_min = 3.0         # orders per month, drawn per supplier
+monthly_rate_max = 6.0
+erp_stale = true               # ERP due dates keep using the ORIGINAL contract lead time after an amendment
+payment_noise_min = -3         # buyer pays this many days around the contractual payment term
+payment_noise_max = 10
+
+[scoring]
+# component weights; components a contract does not define are dropped and weights renormalised
+weight_delivery = 0.5
+weight_quality = 0.3
+weight_price = 0.2
+flag_threshold = 90.0          # fixed a priori: a score below this flags the supplier
+generic_defect_limit_pct = 2.0 # one company-wide quality limit used by the generic scorecard
+generic_ppv_scale = 10.0       # generic price score = 100 - 10 * mean purchase-price-variance %
+
+# ---- supplier behaviour profiles -------------------------------------------------
+# p_late: probability an order is late; late orders arrive late_min..late_max days after the
+#         contractual date, other orders arrive early_min..early_max days early.
+# price_drift_per_year: invoice price grows by this fraction per year regardless of the contract.
+# applies_cap_increase_prob: chance the supplier applies the maximum price increase the contract
+#         allows at each anniversary (a legitimate increase).
+# defect: defect rate = base_defect + defect_drift_per_year * years_since_effective
+# ignores_amendment: after a lead-time amendment the supplier keeps delivering on the old lead time.
+
+[profiles.reliable]
+count = 14
+p_late = 0.05
+late_min = 1
+late_max = 3
+early_min = 0
+early_max = 3
+base_defect = 0.004
+defect_drift_per_year = 0.0
+price_drift_per_year = 0.0
+applies_cap_increase_prob = 0.4
+ignores_amendment = false
+
+[profiles.slightly_late]
+count = 6
+p_late = 0.30
+late_min = 1
+late_max = 4
+early_min = 0
+early_max = 2
+base_defect = 0.004
+defect_drift_per_year = 0.0
+price_drift_per_year = 0.0
+applies_cap_increase_prob = 0.4
+ignores_amendment = false
+
+[profiles.chronic_late]
+count = 4
+p_late = 0.65
+late_min = 3
+late_max = 12
+early_min = 0
+early_max = 2
+base_defect = 0.004
+defect_drift_per_year = 0.0
+price_drift_per_year = 0.0
+applies_cap_increase_prob = 0.4
+ignores_amendment = false
+
+[profiles.erratic]
+# average lead time looks fine: large lates and large earlies cancel out
+count = 5
+p_late = 0.40
+late_min = 3
+late_max = 9
+early_min = 3
+early_max = 9
+base_defect = 0.004
+defect_drift_per_year = 0.0
+price_drift_per_year = 0.0
+applies_cap_increase_prob = 0.4
+ignores_amendment = false
+
+[profiles.price_creep]
+count = 4
+p_late = 0.05
+late_min = 1
+late_max = 3
+early_min = 0
+early_max = 3
+base_defect = 0.004
+defect_drift_per_year = 0.0
+price_drift_per_year = 0.07
+applies_cap_increase_prob = 0.0
+ignores_amendment = false
+
+[profiles.quality_drift]
+count = 4
+p_late = 0.05
+late_min = 1
+late_max = 3
+early_min = 0
+early_max = 3
+base_defect = 0.006
+defect_drift_per_year = 0.012
+price_drift_per_year = 0.0
+applies_cap_increase_prob = 0.4
+ignores_amendment = false
+
+[profiles.ignores_amendment]
+count = 3
+p_late = 0.05
+late_min = 1
+late_max = 3
+early_min = 0
+early_max = 3
+base_defect = 0.004
+defect_drift_per_year = 0.0
+price_drift_per_year = 0.0
+applies_cap_increase_prob = 0.4
+ignores_amendment = true

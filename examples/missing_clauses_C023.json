@@ -1,0 +1,50 @@
+{
+  "contract_id": "C023",
+  "file": "contracts/C023.pdf",
+  "terms": {
+    "supplier_name": "Aalto Fastenings Ltd",
+    "effective_date": "2023-02-13",
+    "expiry_date": "2026-02-13",
+    "lead_time_days": 21,
+    "unit_price_eur": 51.56,
+    "price_adjustment_cap_pct": null,
+    "payment_terms_days": 45,
+    "incoterm": "DDP",
+    "late_penalty_pct_per_day": 0.5,
+    "penalty_cap_pct": 15.0,
+    "defect_threshold_pct": 1.0,
+    "min_annual_volume_units": null,
+    "liability_cap_eur": 1150000,
+    "termination_notice_days": 30
+  },
+  "terms_original": {
+    "supplier_name": "Aalto Fastenings Ltd",
+    "effective_date": "2023-02-13",
+    "expiry_date": "2026-02-13",
+    "lead_time_days": 21,
+    "unit_price_eur": 51.56,
+    "price_adjustment_cap_pct": null,
+    "payment_terms_days": 45,
+    "incoterm": "DDP",
+    "late_penalty_pct_per_day": 0.5,
+    "penalty_cap_pct": 15.0,
+    "defect_threshold_pct": 1.0,
+    "min_annual_volume_units": null,
+    "liability_cap_eur": 1150000,
+    "termination_notice_days": 30
+  },
+  "amendments": [],
+  "flags": {
+    "words_only": false,
+    "lead_in_weeks": true,
+    "annex_price": false,
+    "distractor": true,
+    "expiry_term_only": true,
+    "amend_lead": false,
+    "amend_payment": false,
+    "missing": [
+      "price_cap",
+      "volume"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "contract_id": "C032",
+  "file": "contracts/C032.pdf",
+  "terms": {
+    "supplier_name": "Karhu Plastics AB",
+    "effective_date": "2023-08-24",
+    "expiry_date": "2026-08-24",
+    "lead_time_days": 14,
+    "unit_price_eur": 49.49,
+    "price_adjustment_cap_pct": 2.0,
+    "payment_terms_days": 45,
+    "incoterm": "DDP",
+    "late_penalty_pct_per_day": 1.0,
+    "penalty_cap_pct": 10.0,
+    "defect_threshold_pct": 3.0,
+    "min_annual_volume_units": 15000,
+    "liability_cap_eur": 1050000,
+    "termination_notice_days": 30
+  },
+  "terms_original": {
+    "supplier_name": "Karhu Plastics AB",
+    "effective_date": "2023-08-24",
+    "expiry_date": "2026-08-24",
+    "lead_time_days": 42,
+    "unit_price_eur": 49.49,
+    "price_adjustment_cap_pct": 2.0,
+    "payment_terms_days": 45,
+    "incoterm": "DDP",
+    "late_penalty_pct_per_day": 1.0,
+    "penalty_cap_pct": 10.0,
+    "defect_threshold_pct": 3.0,
+    "min_annual_volume_units": 15000,
+    "liability_cap_eur": 1050000,
+    "termination_notice_days": 30
+  },
+  "amendments": [
+    {
+      "field": "lead_time_days",
+      "old": 42,
+      "new": 14,
+      "effective_date": "2024-12-26"
+    }
+  ],
+  "flags": {
+    "words_only": false,
+    "lead_in_weeks": false,
+    "annex_price": true,
+    "distractor": false,
+    "expiry_term_only": false,
+    "amend_lead": true,
+    "amend_payment": false,
+    "missing": []
+  }
+}

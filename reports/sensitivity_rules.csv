@@ -1,0 +1,6 @@
+,value
+spearman_gold_vs_extracted,0.035
+same_flag_decision_share,0.6
+mean_abs_composite_diff,24.056
+suppliers_with_unscorable_component_extracted,18.0
+spearman_generic_vs_aware_gold,0.565

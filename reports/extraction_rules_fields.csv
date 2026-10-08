@@ -1,0 +1,16 @@
+,correct,wrong,missed,hallucinated,absent_correct,precision,recall,F1,not_found_acc
+supplier_name,40,0,0,0,0,1.0,1.0,1.0,
+effective_date,40,0,0,0,0,1.0,1.0,1.0,
+expiry_date,25,0,15,0,0,1.0,0.625,0.769,
+lead_time_days,12,17,11,0,0,0.414,0.3,0.348,
+unit_price_eur,15,8,17,0,0,0.652,0.375,0.476,
+price_adjustment_cap_pct,21,6,0,8,5,0.6,0.778,0.677,0.385
+payment_terms_days,27,4,9,0,0,0.871,0.675,0.761,
+incoterm,40,0,0,0,0,1.0,1.0,1.0,
+late_penalty_pct_per_day,34,0,0,0,6,1.0,1.0,1.0,1.0
+penalty_cap_pct,34,0,0,0,6,1.0,1.0,1.0,1.0
+defect_threshold_pct,35,0,0,0,5,1.0,1.0,1.0,1.0
+min_annual_volume_units,34,0,0,0,6,1.0,1.0,1.0,1.0
+liability_cap_eur,34,0,0,0,6,1.0,1.0,1.0,1.0
+termination_notice_days,31,0,9,0,0,1.0,0.775,0.873,
+ALL (micro),422,35,61,8,34,0.908,0.815,0.859,0.81

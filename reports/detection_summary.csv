@@ -1,0 +1,7 @@
+,value
+reliable_false_flag_rate_generic,0.071
+reliable_false_flag_rate_aware_gold,0.0
+reliable_false_flag_rate_aware_extracted,0.357
+AUC_all_problems_vs_reliable_generic,0.922
+AUC_all_problems_vs_reliable_aware_gold,0.967
+AUC_all_problems_vs_reliable_aware_extracted,0.571

@@ -1,0 +1,56 @@
+{
+  "contract_id": "C037",
+  "file": "contracts/C037.pdf",
+  "terms": {
+    "supplier_name": "Vaara Plastics AB",
+    "effective_date": "2023-06-26",
+    "expiry_date": "2025-06-26",
+    "lead_time_days": 35,
+    "unit_price_eur": 24.83,
+    "price_adjustment_cap_pct": 0.0,
+    "payment_terms_days": 90,
+    "incoterm": "DAP",
+    "late_penalty_pct_per_day": 0.5,
+    "penalty_cap_pct": 10.0,
+    "defect_threshold_pct": 3.0,
+    "min_annual_volume_units": null,
+    "liability_cap_eur": 800000,
+    "termination_notice_days": 30
+  },
+  "terms_original": {
+    "supplier_name": "Vaara Plastics AB",
+    "effective_date": "2023-06-26",
+    "expiry_date": "2025-06-26",
+    "lead_time_days": 35,
+    "unit_price_eur": 24.83,
+    "price_adjustment_cap_pct": 0.0,
+    "payment_terms_days": 60,
+    "incoterm": "DAP",
+    "late_penalty_pct_per_day": 0.5,
+    "penalty_cap_pct": 10.0,
+    "defect_threshold_pct": 3.0,
+    "min_annual_volume_units": null,
+    "liability_cap_eur": 800000,
+    "termination_notice_days": 30
+  },
+  "amendments": [
+    {
+      "field": "payment_terms_days",
+      "old": 60,
+      "new": 90,
+      "effective_date": "2024-05-04"
+    }
+  ],
+  "flags": {
+    "words_only": true,
+    "lead_in_weeks": true,
+    "annex_price": false,
+    "distractor": true,
+    "expiry_term_only": false,
+    "amend_lead": false,
+    "amend_payment": true,
+    "missing": [
+      "volume"
+    ]
+  }
+}
