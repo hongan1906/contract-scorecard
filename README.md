@@ -144,7 +144,7 @@ contract-aware 0.95-1.00 (mean 0.97), contract-aware with baseline-extracted ter
 `ignores_amendment` flagged 0 % by generic and 100 % by contract-aware in every seed. The ordering holds in all seeds.
 Each profile has only 3-6 suppliers per run, so per-profile percentages move in steps of 17-33 points.
 
-## Limitations (please keep these in the thesis)
+## Limitations
 
 - **Everything here is synthetic.** The results show the method works when the world behaves the way the generator says,
   not how real contracts or suppliers behave. Real contracts are messier (scans, tables, mixed languages, cross-references).
